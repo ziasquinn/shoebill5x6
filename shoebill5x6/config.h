@@ -31,14 +31,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 6
 
 // wiring of each half
-#define MATRIX_COL_PINS { D0, D4, C6, D7, E6, B4 }
+#define MATRIX_COL_PINS { B0, D4, C6, D7, E6, B4 }
 #define MATRIX_ROW_PINS { B5, B7, D5, C7, F1, F0 }
 
 #define DIODE_DIRECTION COL2ROW
 
 #define USE_SERIAL
 //#define SERIAL_USE_MULTI_TRANSACTION
-#define SOFT_SERIAL_PIN D1
+#define SOFT_SERIAL_PIN D3
 
 // WS2812 RGB LED strip input and number of LEDs
 //#define RGB_DI_PIN D3

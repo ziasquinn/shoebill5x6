@@ -10,6 +10,9 @@ SPLIT_KEYBOARD = yes
 #Joystick Enable - Left Side
 JOYSTICK_ENABLE = yes
 
+#trackball enable - right side
+
+ 
 #Bongo Cat
 OLED_ENABLE = yes
 OLED_DRIVER_ENABLE = yes
