@@ -31,7 +31,7 @@ You need a number of knick knacks and hardware to complete the build. If you wan
 ####   7. [Type-C connectors, Male-to-Female](https://www.amazon.com/gp/product/B08BYRH9DR) x2, as short as possible
 ####   8. USB-C cable x1
 ####   9. [Reset button](https://www.aliexpress.com/item/1058764733.html?spm=a2g0s.9042311.0.0.1f734c4dmEJWHA) x2 -- allows you to put the keyboard halves into bootloader mode without having to bridge RST+GND or use Quantum keycodes
-####   10. [128x32 SSD1306 driven OLED screen](https://www.diykeyboards.com/parts/electronics/product/p128x32-oled-lcd-display-ssd1306-driver) x1
+####   10. [128x32 SSD1306 driven OLED screen](https://www.diykeyboards.com/parts/electronics/product/p128x32-oled-lcd-display-ssd1306-driver) x1 make sure you're not occupying SDA/SCL (D1, D0 on Elite-C) pins.
 ####   11. 34-35mm trackball x1
 ####   12. [PMW-3360 motion sensor](https://www.tindie.com/products/jkicklighter/pmw3360-motion-sensor/) x1
 ####   13. [Roller bearings](https://smile.amazon.com/gp/product/B00ZHSQX42) x3
@@ -49,10 +49,10 @@ Basics are this:
 
 for example my config.h has this defined:
 #### // wiring of each half
-#### define MATRIX_COL_PINS { D0, D4, C6, D7, E6, B4 }
+#### define MATRIX_COL_PINS { B0, D4, C6, D7, E6, B4 }
 #### define MATRIX_ROW_PINS { B5, B7, D5, C7, F1, F0 }
 
-3. Note the serial pin used, I used D1
+3. Note the serial pin used, I used D3
 4. strip the wire for columns with your razer blade to expose a section of the wire but keep the rest insulated. This will save a ton of time and effort instead of cutting 4-5 lengths of wire and soldering each one on independently of each other. You want either columns or rows insulated as they will likely cross over each other.
 
 
